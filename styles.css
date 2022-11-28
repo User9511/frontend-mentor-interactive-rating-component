@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%); 
+    --Dark-Blue: hsl(213, 20%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    --space-3xs-2xs: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem);
+    --space-2xs-xs: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem);
+    --space-xs-s: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
+    --space-s-m: clamp(1.31rem, calc(0.95rem + 1.83vw), 2.25rem);
+    --space-m-l: clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem);
+    --space-l-xl: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem);
+    --space-xl-2xl: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem);
+    --space-2xl-3xl: clamp(5.25rem, calc(3.79rem + 7.32vw), 9.00rem);
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--Very-Dark-Blue);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+.card {
+    display:grid;
+    background:linear-gradient(14deg, rgba(23, 30, 40, 1) 0%, rgba(33, 40, 50, 1) 90%);
+    max-width:25.5rem;
+    min-height: 28rem;
+    color:white;
+    padding:var(--space-s-m);
+    border-radius: 2rem;
+    line-height: 1.8;
+    gap: 1.5rem;
+}
+
+
+.logo {
+    background-color:var(--Dark-Blue);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
+p {
+    color: var(--Medium-Grey);
+}
+
+
+fieldset {
+    display:flex;
+    justify-content: space-between;
+    border: 0;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control span {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 1.2rem;
+}
+
+
+input[type="radio"] {
+   appearance: none;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   background-color: var(--Dark-Blue); 
+   cursor: pointer;
+}
+
+input[type="radio"]:hover {
+    background-color: var(--Orange); 
+  
+}
+
+input[type="radio"]:checked {
+    background-color: var(--Light-Grey);
+}
+
+
+
+input[type="radio"]:focus-visible {
+    outline: 3px solid  var(--Orange);
+    outline-offset:5px;
+}
+
+
+.btn-submit {
+    background-color: var(--Orange);
+    border: 0;
+    padding: 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: var(--White);
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.btn-submit:focus {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+
+
+/* Thank You For Your Rating */
+.js-rating-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 1.25rem;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+.result {
+    color: var(--Orange);
+    background-color: var(--Dark-Blue);
+    padding: .3rem 1.5rem;
+    border-radius: 20px;
+}
+
+
+/* Mobile Layout */
+@media screen and (max-width:500px) {
+   
+    .card {
+        margin: 1rem;
+    }
+}
