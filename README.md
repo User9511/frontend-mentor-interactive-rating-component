@@ -1,7 +1,7 @@
 ### Links
 
-- Solution URL: [https://github.com/Smgy94/frontend-mentor-interactive-rating-component]
-- Live Site URL: [https://smgy94.github.io/frontend-mentor-interactive-rating-component/]
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-P_32ALgZs-]
+- Live Site URL: [https://user9511.github.io/frontend-mentor-interactive-rating-component/]
 
 # Frontend Mentor - Interactive rating component solution
 
